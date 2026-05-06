@@ -6,195 +6,104 @@
 <title>Harinarayan Chauhan - Public Support</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI';
-}
+body { font-family: Arial; margin: 0; background: #f4f4f4; }
 
-/* BODY */
-body {
-  background: linear-gradient(to right, #f5f7fa, #e4ecf7);
-}
-
-/* NAVBAR */
+/* NAV */
 nav {
-  position: sticky;
-  top: 0;
-  background: rgba(0,0,0,0.8);
-  backdrop-filter: blur(10px);
+  background: #000;
+  color: white;
   padding: 10px;
   text-align: center;
-  z-index: 1000;
 }
-
-nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #00c6ff;
-}
+nav a { color: white; margin: 10px; text-decoration: none; }
 
 /* HERO */
 .hero {
-  height: 90vh;
-  background: url('https://images.unsplash.com/photo-1529107386315-e1a2ed48a620') center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  background: #004aad;
   color: white;
-  text-align: center;
 }
 
-.hero-content {
-  background: rgba(0,0,0,0.6);
-  padding: 30px;
-  border-radius: 20px;
+.profile {
+  width: 150px;
+  border-radius: 50%;
 }
 
-.hero h1 {
-  font-size: 42px;
-}
+/* SECTIONS */
+section { padding: 30px; text-align: center; }
 
-.hero h3 {
-  margin: 10px 0;
-}
-
-/* SECTION */
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-/* CARD */
 .card {
-  display: inline-block;
-  width: 300px;
-  margin: 15px;
-  padding: 20px;
   background: white;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
+  margin: 10px;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 10px;
 }
 
 /* FORM */
 form {
   background: white;
   padding: 20px;
-  border-radius: 20px;
-  max-width: 500px;
+  max-width: 400px;
   margin: auto;
-  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 10px;
 }
 
-form input, form select {
+input, select {
   width: 100%;
-  padding: 12px;
   margin: 10px 0;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+  padding: 10px;
 }
 
-.btn {
-  background: linear-gradient(to right, #0072ff, #00c6ff);
+button {
+  background: #004aad;
   color: white;
+  padding: 10px;
   border: none;
-  padding: 12px;
-  width: 100%;
-  border-radius: 10px;
-  cursor: pointer;
 }
 
-.btn:hover {
-  opacity: 0.9;
-}
-
-/* POPUP */
-.popup {
-  display: none;
+/* FLOAT */
+.whatsapp {
   position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 20px #000;
-}
-
-/* FLOAT BUTTONS */
-.whatsapp, .facebook {
-  position: fixed;
+  bottom: 20px;
   right: 20px;
 }
-
-.whatsapp { bottom: 20px; }
-.facebook { bottom: 90px; }
-
-.whatsapp img, .facebook img {
-  width: 60px;
-}
-
-/* FOOTER */
-footer {
-  background: #111;
-  color: white;
-  padding: 20px;
-}
+.whatsapp img { width: 60px; }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#join">Join</a>
-  <a href="#contact">Contact</a>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
-  <div class="hero-content">
-    <h1>Shri Harinarayan Chauhan</h1>
-    <h3>जिला अध्यक्ष – आम आदमी पार्टी, देवरिया</h3>
-    <p>जन सेवा | जन समर्थन | विकास</p>
-  </div>
+  <img src="https://via.placeholder.com/150" class="profile">
+  <!-- Replace above image with real photo -->
+  <h1>Shri Harinarayan Chauhan</h1>
+  <p>जिला अध्यक्ष – आम आदमी पार्टी, देवरिया</p>
 </div>
 
-<!-- ABOUT -->
 <section id="about">
   <h2>हमारे बारे में</h2>
-  <p>
-    यह मंच जनसमर्थन, सहायता एवं समुदाय सेवा के लिए समर्पित है।
-  </p>
+  <p>यह मंच जनसमर्थन और सेवा के लिए समर्पित है।</p>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
-  <h2>हमारी सेवाएँ</h2>
-
-  <div class="card">जन शिकायत सहायता</div>
-  <div class="card">सरकारी योजना मार्गदर्शन</div>
+  <h2>सेवाएँ</h2>
+  <div class="card">जन शिकायत</div>
+  <div class="card">सरकारी योजना सहायता</div>
   <div class="card">सामाजिक सेवा</div>
 </section>
 
-<!-- JOIN FORM -->
 <section id="join">
-  <h2>हमसे जुड़ें</h2>
+  <h2>जुड़ें</h2>
 
-  <form onsubmit="submitForm(event)">
+  <form onsubmit="saveData(event)">
     <input type="text" id="name" placeholder="नाम" required>
     <input type="text" id="father" placeholder="पिता का नाम" required>
     <input type="text" id="aadhaar" placeholder="आधार नंबर" required>
@@ -203,71 +112,63 @@ footer {
       <option>सदस्य</option>
       <option>वालंटियर</option>
       <option>सोशल मीडिया</option>
-      <option>जनसेवा</option>
     </select>
 
-    <button class="btn">Submit</button>
+    <button type="submit">Submit</button>
   </form>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2>संपर्क करें</h2>
-  <p>📞 +91 9793150845</p>
-</section>
-
-<!-- POPUP -->
-<div class="popup" id="popup">
-  <h3>✅ Successfully Submitted</h3>
-</div>
-
-<!-- FLOAT BUTTONS -->
+<!-- WHATSAPP -->
 <div class="whatsapp">
   <a href="https://wa.me/919793150845">
     <img src="https://img.icons8.com/color/96/whatsapp.png">
   </a>
 </div>
 
-<div class="facebook">
-  <a href="https://www.facebook.com/share/1AZvdddEDv/?mibextid=wwXIfr">
-    <img src="https://img.icons8.com/color/96/facebook.png">
-  </a>
-</div>
+<!-- ✅ FIREBASE + SAVE -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Public Support Platform</p>
-</footer>
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
+  projectId: "YOUR_PROJECT",
+  storageBucket: "YOUR_PROJECT.appspot.com",
+  messagingSenderId: "XXXX",
+  appId: "XXXX"
+};
 
-<!-- SCRIPT -->
-<script>
-function submitForm(e) {
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+// ✅ SAVE FUNCTION
+window.saveData = function(e) {
   e.preventDefault();
 
-  let name = document.getElementById("name").value;
-  let father = document.getElementById("father").value;
-  let aadhaar = document.getElementById("aadhaar").value;
-  let role = document.getElementById("role").value;
+  let name = name.value;
+  let father = father.value;
+  let aadhaar = aadhaar.value;
+  let role = role.value;
 
-  if (aadhaar.length != 12) {
-    alert("कृपया सही आधार नंबर दर्ज करें");
+  if (aadhaar.length !== 12) {
+    alert("Invalid Aadhaar");
     return;
   }
 
-  let message = `New Join Request:
-Name: ${name}
-Father: ${father}
-Aadhaar: ${aadhaar}
-Role: ${role}`;
+  push(ref(db, "users/"), {
+    name, father, aadhaar, role,
+    date: new Date().toLocaleString()
+  });
 
-  let url = `https://wa.me/919793150845?text=${encodeURIComponent(message)}`;
-  window.open(url, "_blank");
+  let msg = `New Join:
+${name} - ${role}`;
 
-  document.getElementById("popup").style.display = "block";
+  window.open("https://wa.me/919793150845?text=" +
+    encodeURIComponent(msg));
 
-  setTimeout(() => {
-    document.getElementById("popup").style.display = "none";
-  }, 3000);
+  alert("Saved ✅");
 }
 </script>
 
