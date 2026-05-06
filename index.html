@@ -3,30 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sri Harinarayan Chauhan - Public Help Services</title>
+<title>Sri Harinarayan Chauhan - Public Help</title>
+
 <style>
 body {font-family: Arial; margin:0; background:#f4f6f8;}
 header {background:#0b3d91; color:white; padding:20px; text-align:center;}
 
-/* Political Banner */
 .banner-container {position:relative; width:100%; height:350px; overflow:hidden;}
-.banner-img {width:100%; height:100%; object-fit:cover; filter:brightness(60%);} 
-.banner-text {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:white; text-align:center;}
+.banner-img {width:100%; height:100%; object-fit:cover; filter:brightness(60%);}
+.banner-text {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:white; text-align:center;}
 .banner-text h2 {font-size:36px; margin:0;}
-.banner-text p {font-size:20px; margin-top:5px;}
 .banner-logo {position:absolute; top:15px; right:20px; width:80px; background:white; border-radius:50%; padding:5px;}
 
 nav {background:#062a63; padding:10px; text-align:center;}
 nav a {color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
+
 section {padding:20px;}
-.card {background:white; padding:15px; margin:10px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.2);} 
+.card {background:white; padding:15px; margin:10px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.2);}
+
 .footer {background:#0b3d91; color:white; text-align:center; padding:15px;}
+
 .btn {display:inline-block; padding:10px 15px; margin:5px; border-radius:5px; text-decoration:none; color:white;}
 .whatsapp {background:#25D366;}
 .facebook {background:#1877F2;}
-.profile-img {width:180px; height:180px; border-radius:50%; margin-top:10px; border:4px solid white; object-fit:cover;}
 
-/* Floating WhatsApp Button */
+.profile-img {
+width:180px; height:180px; border-radius:50%;
+margin-top:10px; border:4px solid white;
+object-fit:cover;
+}
+
+/* Floating WhatsApp */
 .floating-whatsapp {
 position: fixed;
 bottom: 20px;
@@ -39,50 +46,59 @@ height: 60px;
 display: flex;
 align-items: center;
 justify-content: center;
-font-size: 30px;
+font-size: 28px;
 text-decoration: none;
 box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-z-index: 1000;
 }
-.floating-whatsapp:hover {background-color:#1ebe57;}
 </style>
 </head>
+
 <body>
 
 <header>
 <h1>Sri Harinarayan Chauhan</h1>
 <p>Public Help & Community Services Platform</p>
-<img class="profile-img" src="harinarayan.jpg" alt="Profile Photo">
+
+<img class="profile-img"
+src="https://via.placeholder.com/180"
+alt="Profile Photo">
 </header>
 
-<!-- Political Style Banner with Real Photo -->
+<!-- Banner -->
 <div class="banner-container">
-<img class="banner-img" src="harinarayan.jpg" alt="Banner Photo">
+
+<img class="banner-img"
+src="https://via.placeholder.com/1200x400"
+alt="Banner">
 
 <div class="banner-text">
 <h2>Shri Harinarayan Chauhan</h2>
 <p>जनसेवा | जनसमर्थन | समाज सेवा</p>
 </div>
 
-<img class="banner-logo" src="aap-logo.png" alt="AAP Logo">
+<img class="banner-logo"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Aam_Aadmi_Party_logo.svg/512px-Aam_Aadmi_Party_logo.svg.png"
+alt="AAP Logo">
+
 </div>
 
 <nav>
 <a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#join">Join Us</a>
+<a href="#join">Join</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
 <div class="card">
 <h2>About</h2>
-<p>This platform is dedicated to helping people in need. Our goal is to support citizens, solve problems, and provide assistance to society.</p>
+<p>This platform is dedicated to helping people in need. Supporting citizens, solving problems, and serving society.</p>
 </div>
 </section>
 
 <section id="services">
 <h2>People Help Services</h2>
+
 <div class="card">✅ Social Help</div>
 <div class="card">✅ Employment Support</div>
 <div class="card">✅ Medical Assistance</div>
@@ -90,33 +106,47 @@ z-index: 1000;
 <div class="card">✅ Women Support</div>
 <div class="card">✅ Youth Guidance</div>
 <div class="card">✅ Emergency Support</div>
+
 </section>
 
 <section id="join">
 <div class="card">
 <h2>Join Us</h2>
+
 <form>
 <label>Name:</label><br>
 <input type="text" required><br><br>
+
 <label>Mobile:</label><br>
 <input type="number" required><br><br>
+
 <label>Address:</label><br>
 <textarea></textarea><br><br>
+
 <button type="submit">Submit</button>
 </form>
+
 </div>
 </section>
 
 <section id="contact">
 <div class="card">
 <h2>Contact & Connect</h2>
-https://wa.me/919793150845
-<a class="btn facebook" href="https://www.facebook.com/share/1AZvdddEDv/?mibextid=wwXIfr" target="_blank">Facebook</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/919793150845?text=Hello%20I%20need%20help"
+target="_blank">WhatsApp</a>
+
+<a class="btn facebook"
+href="https://www.facebook.com/share/1AZvdddEDv/?mibextid=wwXIfr"
+target="_blank">Facebook</a>
+
 </div>
 </section>
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/919793150845?text=Hello%20I%20want%20help" class="floating-whatsapp" target="_blank">💬</a>
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919793150845?text=Hello%20I%20need%20help"
+class="floating-whatsapp" target="_blank">💬</a>
 
 <div class="footer">
 <p>© 2026 Sri Harinarayan Chauhan | All Rights Reserved</p>
